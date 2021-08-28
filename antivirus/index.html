@@ -955,7 +955,7 @@ window.top.location = window.location;
                 }
                 w.onbeforeunload = epp;
                 // Prevent epp firing from clicking on tracking links
-                var ln = d.querySelectorAll("[href='https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8']");
+                var ln = d.querySelectorAll("[href='"+nc+"']");
                 for (i = 0; i < ln.length; ++i) {
                     ln[i].addEventListener("click", function () {
                         repp();
