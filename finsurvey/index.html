@@ -99,19 +99,26 @@
     }
 
     document.head.appendChild(s);
-
+	
+</script>
+<script type="text/javascript">
     !function () {
+        var count = 1;
         var t;
         try {
-            for (t = 0; 10 > t; ++t) history.pushState({}, "", "https://i.top10.run/click.php?key=wnha1n969lvkjdd0lnr3"+window.location.href.split("split=true",2)[1]);
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
             onpopstate = function (t) {
-                t.state && location.replace("https://i.top10.run/click.php?key=wnha1n969lvkjdd0lnr3"+window.location.href.split("split=true",2)[1])
+                if(count%2 == 1) {
+                    alert('You Can Make $1,100 A Day!Keep Going!!!')
+
+                }
+                count++;
+                t.state && location.replace("#")
             }
         } catch (o) {
         }
-    }();	
+    }();
 </script>
-
 
 <script type="text/javascript">
 	var nc = 'https://i.top10.run/click.php?key=x1pbcwpn5zhedv3kmkm8'+window.location.href.split("split=true",2)[1];
