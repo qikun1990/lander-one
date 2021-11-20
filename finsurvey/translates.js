@@ -1,7 +1,7 @@
 var langs = {
 en: {
  step1: "ONLY TODAY",
- step2: "Do you want to earn $1100 per day online?",
+ step2: "Do you want to earn $1620 per day online?",
  step3: "Answer 7 quick questions to qualify!",
  step4: "Attention:",
  step5: "Offer only valid for",
